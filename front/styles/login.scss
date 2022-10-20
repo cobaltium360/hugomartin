@@ -1,0 +1,49 @@
+.container_login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.card_login{
+    background-color: black;
+    padding: 2rem;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    h2{
+        margin: 0;
+    }
+}
+
+.container_input_login{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: .5rem;
+    input{
+        border: none;
+        height: 30px;
+        border-radius: 20px;
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+}
+
+.container_btn_login{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn_login{
+    background-color: white;
+    color: black;
+    p{
+        margin: 0;
+    }
+    padding: 1rem;
+    border-radius: 20px;
+}

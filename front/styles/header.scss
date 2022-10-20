@@ -1,0 +1,44 @@
+.container_header{
+    color: white;
+    h2{
+        margin: 0;
+        font-size: 32px;
+    }
+    background-color: black;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    justify-content: space-between;
+}
+
+.container_nav_tel{
+    position: fixed;
+    left: 0;
+    height: 0;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.link_header{
+    font-size: 25px;
+}
+
+.active_header{
+    text-decoration: underline 4px solid blueviolet;
+}
+
+.h2_responsive_header_cross{
+    position: absolute;
+    top: 30px;
+    right: 10px;
+}
