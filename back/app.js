@@ -16,7 +16,7 @@ const helmet = require('helmet');
 db.sequelize.sync();
 app.use(express.json());
 app.use(cors({
-	origin: ['http://localhost:3000', 'https://monespacetsa.fr'],
+	origin: ['https://www.hugomartin.lol'],
 }));
 app.use(helmet());
 app.use(helmet.crossOriginResourcePolicy({ policy: "same-origin" }));

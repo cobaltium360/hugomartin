@@ -106,7 +106,7 @@ export default function Home({ posts }) {
 
 export async function getServerSideProps() {
   // Fetch data from external API
-  const res = await fetch("http://localhost:3001/api/post")
+  const res = await fetch("https://www.hugomartin.lol/api/post")
   const posts = await res.json()
   console.log(posts)
   //	const posts = []

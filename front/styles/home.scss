@@ -15,6 +15,7 @@
     padding-left: .5rem;
     padding-right: .5rem;
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .inputfileforum{
@@ -56,4 +57,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.image_action{
+    object-fit: cover;
 }

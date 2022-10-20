@@ -1,13 +1,13 @@
-const http = require('http');
+const https = require('https');
 const app = require('./app');
 
-// const fs = require('fs');
-// let key = fs.readFileSync('/etc/letsencrypt/live/monespacetsa.fr/privkey.pem');
-// let cert = fs.readFileSync('/etc/letsencrypt/live/monespacetsa.fr/fullchain.pem');
-// var options = {
-//   key: key,
-//   cert: cert
-// };
+const fs = require('fs');
+ let key = fs.readFileSync('/etc/letsencrypt/live/www.hugomartin.lol/privkey.pem');
+ let cert = fs.readFileSync('/etc/letsencrypt/live/www.hugomartin.lol/fullchain.pem');
+ var options = {
+   key: key,
+   cert: cert
+};
 
 
 const normalizePort = val => {
@@ -44,8 +44,8 @@ const errorHandler = error => {
   }
 };
 
-// const server = https.createServer(options, app);
-const server = http.createServer( app);
+const server = https.createServer(options, app);
+//const server = http.createServer( app);
 server.on('error', errorHandler);
 server.on('listening', () => {
   const address = server.address();

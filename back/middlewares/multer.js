@@ -21,7 +21,7 @@ const storage = multer.diskStorage({
 
 const multerFilter = function (req, file, callback) {
   ext = file.mimetype; 
-  if(ext == 'image/jpg' || ext == 'image/jpeg' || ext == 'image/png'){
+  if(ext){
     callback(null, true);
   }else{
     callback(new  Error ( 'pas la bonne extension'));
